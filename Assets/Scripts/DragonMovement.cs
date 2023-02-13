@@ -32,8 +32,6 @@ public class DragonMovement : MonoBehaviour
         {
             playerRigidBody.velocity = Vector2.up * flapStrength;
             jumpSFX.Play();
-
-            dragonAnim.SetBool("Attack", true);
         }
 
         if (transform.position.y > 10 || transform.position.y < -10)
@@ -47,5 +45,10 @@ public class DragonMovement : MonoBehaviour
     {
         logic.gameOver();
         dragonIsAlive = false;
+    }
+
+    public bool canAttack()
+    {
+        return true;
     }
 }
