@@ -30,7 +30,6 @@ public class LogicManager : MonoBehaviour
 
     public void gameOver()
     {
-        Debug.Log(gameOverSFX);
         gameOverSFX.Play();
         gameOverScreen.SetActive(true);
     }
